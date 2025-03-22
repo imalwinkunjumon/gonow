@@ -1,0 +1,30 @@
+<!-- frontend/pages/booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <h1>Book Your Ticket</h1>
+  <div id="seat-layout">
+    <!-- Example seats; you can generate these dynamically -->
+    <button class="seat" data-seat="A1">A1</button>
+    <button class="seat" data-seat="A2">A2</button>
+    <button class="seat" data-seat="A3">A3</button>
+  </div>
+  <form id="bookingForm">
+    <input type="hidden" name="seat_number" id="seat_number">
+    <select name="seat_class" required>
+      <option value="AC">AC</option>
+      <option value="Sleeper">Sleeper</option>
+      <option value="General">General</option>
+      <option value="Tatkal">Tatkal</option>
+    </select>
+    <button type="submit">Confirm Booking</button>
+  </form>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/api.js"></script>
+</body>
+</html>
